@@ -67,6 +67,7 @@ export function selectPoints(coordinates, lineThreshold) {
   let selectedPoints = new Set();
 
   for (let lineId = 0; lineId < coordinates.length - 1; lineId++) {
+    console.log(coordinates[lineId], coordinates[lineId + 1])
     let ray = new THREE.Raycaster(coordinates[lineId], coordinates[lineId + 1]);
     ray.params.Points.threshold = lineThreshold;
     let intersections = ray.intersectObject(this.pcBuffer, true);

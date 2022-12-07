@@ -44,5 +44,5 @@ export function createPole(event) {
   // console.log(meshPole.geometry.parameters.path.points)
   displayPole(this.poles);
   this.scene.add(meshPole);
-//   this.selectPoints(this.poleCoordinates, this.poleThreshold);
+  this.selectPoints(this.poleCoordinates, this.poleThreshold);
 }
