@@ -26,7 +26,11 @@ app.use(express.static(__dirname + "/public"));
 // );
 
 
-app.listen(3000, () => console.log("Visit http://127.0.0.1:3000"));
+let server = app.listen(0, onListening );
+
+function onListening(e){
+    console.log(server.address().port)
+}
 
 let data = fs
   .readFileSync("./span.csv")

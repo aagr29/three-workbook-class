@@ -1,6 +1,4 @@
-Set up Docker container for network-detect. We use this service to get specfic points for our catenary.
-use the following link to understand how to set up the service.
-https://cognitive-earth.atlassian.net/wiki/spaces/PLAT/pages/47480833/Manual+Network+Builder
+
 
 You will need to turn off CORS in your browser
 
@@ -8,7 +6,21 @@ to start the app:
 git clone https://github.com/cognitive-earth/Threejs-click-create.git
 cd Threejs-click-create
 npm start
-Visit http://127.0.0.1:3000
+Visit http://127.0.0.1:port_number
+
+-create a catenary on point cloud
+        Hold CRTL and click on the point cloud to select a point. 
+        A catenary will be created on selection of three consecutive points.
+        
+-Modify a catenary.
+        You can select the point of the catenary which is to be moved by clicking on the sphere and holding SHIFT at the same time.
+        The red sphere will turn yellow on selection
+        Click on the point point cloud where you want to move the point. 
+        By moving all three points which was used to create the original catenary. You can move the whole catenary.
+
+-Create a Pole
+        Pole is created by clicking on a point while holding ALT. Choose the base point where the pole is required. Click on the point. A pole is created from that point with the height equal to the highest point in the scene
+
 
 
 

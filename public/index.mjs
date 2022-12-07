@@ -1,6 +1,7 @@
-
-
 import {SceneBuilder} from "./sceneBuilder.mjs";
-let myScene = new SceneBuilder()
 
+document.addEventListener("DOMContentLoaded", initialise);
 
+function initialise(){
+    new SceneBuilder()
+}
